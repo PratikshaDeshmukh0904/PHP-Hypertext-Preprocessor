@@ -7,8 +7,8 @@
 	 }
 	 
 	 function connect(){
-	  $this->link = mysqli_connect('182.50.133.77','prabudh','Prabudh@123') or die('Cannot connect to the DB');
-	  mysqli_select_db($this->link,'prabudhbharat') or die('Cannot select the DB');
+	  $this->link = mysqli_connect('servername','user','password@123') or die('Cannot connect to the DB');
+	  mysqli_select_db($this->link,'database') or die('Cannot select the DB');
 	 }
 	 
 	 function storeInDB($id,$Name,$Mobile,$MailID,$State,$District,$Village,$Station1,$Crops,$Password){
